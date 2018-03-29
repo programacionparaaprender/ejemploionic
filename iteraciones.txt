@@ -16,10 +16,34 @@ sudo npm install -g cordova ionic
 Start an App
 -----------------
 --------------
-ionic start myApp tabs
+ionic start ejemploionic tabs
 
 para ejecutar
 
 ionic serve
+
+ver lo instalado
+npm list -g
+
+
+-------------------
+--------------------
+Iteración 0: Creación del proyecto
+-------------------
+--------------------
+
+ionic start ejemploionic tabs
+? Would you like to integrate your new app with Cordova to target native iOS anY
+d Android? (y/N)
+Y
+Install the free Ionic Pro SDK and connect your app? (Y/n) Y
+
+
+--------------------
+---------------------
+Iteración 1:
+--------------------
+--------------------
+
 
 

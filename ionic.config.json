@@ -1,6 +1,8 @@
 {
-  "name": "EjemploIonic",
+  "name": "ejemploionic",
   "app_id": "",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }
