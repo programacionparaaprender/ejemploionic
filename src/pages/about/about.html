@@ -1,11 +1,47 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Nosotros
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-	<h2>Empresa @</h2>
+	<ion-slides pager>
+	  <ion-slide>
+	  	<ion-img width="80" height="80" src="../assets/imgs/logo.png">
+	    </ion-img>
+	    <h2>Empresa @</h2>
+	    <button ion-button color="dark">Boton</button>
+	      <p class="color">
+		    This starter project comes with simple tabs-based layout for apps
+		    that are going to primarily use a Tabbed UI.
+		  </p>
+	  </ion-slide>
+
+	  <ion-slide>
+	    <h2>Slide 2</h2>
+	      <p>
+		    This starter project comes with simple tabs-based layout for apps
+		    that are going to primarily use a Tabbed UI.
+		  </p>
+		  <!-- automatically uses the correct "star" icon depending on the mode -->
+			<ion-icon name="star"></ion-icon>
+
+			<!-- explicity set the icon for each mode -->
+			<ion-icon ios="ios-home" md="md-home"></ion-icon>
+
+			<!-- always use the same icon, no matter what the mode -->
+			<ion-icon name="ios-clock"></ion-icon>
+			<ion-icon name="logo-twitter"></ion-icon>
+	  </ion-slide>
+
+	  <ion-slide>
+	    <h2>Slide 3</h2>
+	    <ion-img width="80" height="80" src="../assets/imgs/logo.png">
+	    	
+	    </ion-img>
+	  </ion-slide>
+
+	</ion-slides>
 </ion-content>

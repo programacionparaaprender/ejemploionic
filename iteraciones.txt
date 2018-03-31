@@ -16,15 +16,39 @@ sudo npm install -g cordova ionic
 Start an App
 -----------------
 --------------
+creación del proyecto
 ionic start ejemploionic tabs
 
 para ejecutar
-
 ionic serve
 
 ver lo instalado
 npm list -g
 
+visualizar la aplicación entre diferentes plataformas moviles
+ionic serve --lab
+
+los tags de las plantillas ionic
+ion-header
+ion-content
+ion-list
+ion-list-header
+ion-item
+ion-button
+
+Examples
+$ ionic generate 
+$ ionic generate component
+$ ionic generate directive
+$ ionic generate page
+$ ionic generate pipe
+$ ionic generate provider
+$ ionic generate tabs
+$ ionic generate component foo
+$ ionic generate page Login
+$ ionic generate page Detail --no-module
+$ ionic generate page About --constants
+$ ionic generate pipe MyFilterPipe
 
 -------------------
 --------------------
@@ -41,9 +65,24 @@ Install the free Ionic Pro SDK and connect your app? (Y/n) Y
 
 --------------------
 ---------------------
-Iteración 1:
+Iteración 1: config.xml Edición
 --------------------
 --------------------
+Información de la aplicación
+como nombre
+
+ionic serve --lab
+
+ion-header
+ion-content
+
+colocar en español las plantillas
+.ts significa type script
+
+dentro de cada carpeta de página
+el .scss es el encargado de los estilos
+
+variable.scss son los estilos globales
 
 
 
