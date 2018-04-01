@@ -84,5 +84,15 @@ el .scss es el encargado de los estilos
 
 variable.scss son los estilos globales
 
+--------------------
+---------------------
+Iteración 2: Crear una nueva página
+--------------------
+--------------------
+ionic generate page youtube
+editar tabs.ts agregar nuevos parametros
+editar app.module.ts agregar nuevos parametros
+
+
 
 
