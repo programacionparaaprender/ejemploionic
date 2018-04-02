@@ -94,5 +94,32 @@ editar tabs.ts agregar nuevos parametros
 editar app.module.ts agregar nuevos parametros
 
 
+--------------------
+---------------------
+Iteración 3: Agregando imagenes
+--------------------
+--------------------
+ion-content
+ion-card
+img src="img/logo.png"
+ion-card-content
+
+--------------------
+---------------------
+Iteración 4: Listas y *ngFor para crearlas dinámicamente
+--------------------
+--------------------
+forma estatica
+ion-card
+ion-card-header
+	    Header
+ion-card-header
+ion-card-content
+	    The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+ion-card-content
+ion-list
+button ion-item
+
+
 
 

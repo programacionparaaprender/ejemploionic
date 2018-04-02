@@ -14,8 +14,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'youtube.html',
 })
 export class YoutubePage {
-
+	lista: Array<any> = [
+	{titulo:"Perro", color:"#333"},
+	{titulo:"Gato", color:"#999"}
+	];
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
   }
 
   ionViewDidLoad() {
