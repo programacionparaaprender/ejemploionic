@@ -50,9 +50,17 @@ $ ionic generate page Detail --no-module
 $ ionic generate page About --constants
 $ ionic generate pipe MyFilterPipe
 
+--------------------------
+Iteración 0.0: Configurar Sublime Text 3
+---------------------------------------
+
+https://packagecontrol.io/installation
+ctrl+shift+p y luego package control: install package
+luego seleccionamos emmet css
+
 -------------------
 --------------------
-Iteración 0: Creación del proyecto
+Iteración 0.1: Creación del proyecto
 -------------------
 --------------------
 
@@ -119,6 +127,66 @@ ion-card-content
 ion-card-content
 ion-list
 button ion-item
+
+--------------------
+---------------------
+Iteración 5: Enlazar a otras páginas con NavController
+--------------------
+--------------------
+ionic generate page masinfo
+editar app/app.module.ts agregar nuevos parametros
+home.html
+<button ion-button (click)="otraPagina()">A otra página</button>
+home.ts
+import { MasinfoPage } from '../masinfo/masinfo';
+ otraPagina(){
+  	this.navCtrl.push(MasinfoPage);
+  }
+
+--------------------
+---------------------
+Iteración 6: Creando listas dinámicas con Navigation
+--------------------
+--------------------
+contact.html
+contact.ts
+masinfo.html
+masinfo.ts
+
+--------------------
+---------------------
+Iteración 7: Grid
+--------------------
+--------------------
+Maximo son 12 columnas
+<ion-col col-1> se puede poner
+<ion-col class="caja" col-md-6>
+<ion-col class="caja" col-auto> se ajusta al tamaño del texto
+
+--------------------
+---------------------
+Iteración 8: Alertas
+--------------------
+--------------------
+https://ionicframework.com/docs/components/#alert-confirm
+https://github.com/ionic-team/ionic-preview-app/tree/master/src/pages/alerts
+home.html
+home.ts
+
+--------------------
+---------------------
+Iteración 9: Conexión con API REST
+--------------------
+--------------------
+https://jsonplaceholder.typicode.com/
+
+
+
+
+
+
+
+
 
 
 
