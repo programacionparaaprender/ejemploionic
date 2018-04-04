@@ -20,20 +20,21 @@
 	  </ion-slide>
 
 	  <ion-slide>
-	    <h2>Slide 2</h2>
-	      <p>
-		    This starter project comes with simple tabs-based layout for apps
-		    that are going to primarily use a Tabbed UI.
-		  </p>
-		  <!-- automatically uses the correct "star" icon depending on the mode -->
-			<ion-icon name="star"></ion-icon>
 
-			<!-- explicity set the icon for each mode -->
-			<ion-icon ios="ios-home" md="md-home"></ion-icon>
+	<ion-card>
+	  <ion-card-header>
+	    Mi primer lista
+	  </ion-card-header>
+	  <ion-card-content>
+	    Mi primer contenido de lista
+	  </ion-card-content>
+	  <ion-list inset>
+		  <button ion-item *ngFor="let usuario of usuarios">
+		  	{{ usuario.id }} {{ usuario.name }} 
+		  </button> 
+		</ion-list>
+	</ion-card>
 
-			<!-- always use the same icon, no matter what the mode -->
-			<ion-icon name="ios-clock"></ion-icon>
-			<ion-icon name="logo-twitter"></ion-icon>
 	  </ion-slide>
 
 	  <ion-slide>

@@ -178,7 +178,12 @@ home.ts
 Iteración 9: Conexión con API REST
 --------------------
 --------------------
+https://www.youtube.com/watch?v=PrwwGuwq44g&index=18&list=PLPl81lqbj-4IzylAHYigeNB_Pob2WGGEG
 https://jsonplaceholder.typicode.com/
+aquí se almacena un json users
+https://jsonplaceholder.typicode.com/users
+
+ionic g provider proveedor1
 
 
 
