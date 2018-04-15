@@ -184,6 +184,44 @@ aquí se almacena un json users
 https://jsonplaceholder.typicode.com/users
 
 ionic g provider proveedor1
+about.html
+about.ts
+
+
+--------------------
+---------------------
+Iteración 10: Generar APK
+--------------------
+--------------------
+    $ ionic cordova platform
+    $ ionic cordova platform add ios
+    $ ionic cordova platform add android
+    $ ionic cordova platform rm ios
+
+
+ionic cordova platform rm android
+
+ionic platform add ios
+ionic build ios
+ionic emulate ios
+
+usar telemetry on
+- cordova telemetry on 
+- cordova telemetry off
+- cordova build --no-telemetry
+
+ionic cordova platform add android@~7.0.0
+ionic cordova build android@~7.0.0
+
+ionic cordova plugin rm cordova-plugin-console
+ionic cordova build --release android@~7.0.0
+keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore HelloWorld-release-unsigned.apk alias_name
+zipalign -v 4 HelloWorld-release-unsigned.apk HelloWorld.apk
+
+
+ ionic cordova run android --emulator
+
 
 
 
