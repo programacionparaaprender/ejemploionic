@@ -1,3 +1,9 @@
+-----------------
+Corrección de errores
+--------------------
+[ERROR] ionic-app-scripts has unexpectedly closed (exit code 1).
+https://stackoverflow.com/questions/51569546/ionic-a-utility-cli-has-unexpectedly-closed
+
 Paquetes a instalar
 ------------------------------
 sudo apt install npm
