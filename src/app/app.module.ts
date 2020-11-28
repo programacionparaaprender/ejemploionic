@@ -15,6 +15,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { Proveedor1Provider } from '../providers/proveedor1/proveedor1';
 import { HttpClientModule } from '@angular/common/http';
 
+import { AgmCoreModule } from '@agm/core';
+import { GeocercaGooglePage } from '../pages/geocerca-google/geocerca-google';
 
 @NgModule({
   declarations: [
@@ -24,12 +26,17 @@ import { HttpClientModule } from '@angular/common/http';
     HomePage,
     YoutubePage,
     MasinfoPage,
-    TabsPage
+    TabsPage,
+    //GeocercaGooglePage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpClientModule
+    HttpClientModule,
+    /* AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDZktO_JnnvrY4BnD2IyZo8PqNXiDTWP1w',
+      libraries: ['places'] 
+    }),  */
   ],
   bootstrap: [IonicApp],
   entryComponents: [

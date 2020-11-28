@@ -1,0 +1,43 @@
+<!--
+  Generated template for the GeocercaGooglePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>geocerca-google</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-button 
+    (click)="limpiar()">
+    Limpiar
+  </ion-button>
+  <div style="width: 100%; height: 1rem; display: block;"></div>
+  <agm-map 
+  
+  [latitude]="lat" 
+  [longitude]="lng"
+  [clickableIcons]="clickeable"
+  [draggable]="draggable"
+  (mapClick)="mapClick($event)">
+    <agm-marker 
+    *ngFor="let marker of markers"
+    [latitude]="marker.lat" 
+    [longitude]="marker.lng">
+    </agm-marker>
+    <agm-polygon 
+    [clickable]="true"
+    [visible]="true"
+    [editable]="true"
+    [zIndex]="1"
+    [draggable]="true"
+      [paths]="paths">
+    </agm-polygon>
+  </agm-map>
+</ion-content>
