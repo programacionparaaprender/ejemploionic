@@ -1,3 +1,26 @@
+
+### pruebas unitarias
+https://ionicframework.com/docs/v3/components/#card-background
+https://reviblog.net/2020/07/03/tutorial-de-ionic-formularios-reactivos/
+
+probar el primero
+npm i --save-dev @types/jest
+or
+npm i --save-dev @types/mocha
+
+
+pendiente revisar
+https://github.com/ionic-team/ionic-unit-testing-example
+
+no funcionan
+yarn install --ignore-engines
+yarn add --dev chai mocha ts-node @types/chai @types/mocha
+
+
+
+### levantar proyecto
+ionic serve
+
 ## google  maps ionic
 https://medium.com/@gamiparesh5/agm-angular-google-map-in-ionic-4-bc97bcc9421f
  npm install --save @agm/core@1.1.0

@@ -14,9 +14,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Proveedor1Provider } from '../providers/proveedor1/proveedor1';
 import { HttpClientModule } from '@angular/common/http';
-
-import { AgmCoreModule } from '@agm/core';
-import { GeocercaGooglePage } from '../pages/geocerca-google/geocerca-google';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+//import { AgmCoreModule } from '@agm/core';
+//import { GeocercaGooglePage } from '../pages/geocerca-google/geocerca-google';
 
 @NgModule({
   declarations: [
@@ -30,6 +30,8 @@ import { GeocercaGooglePage } from '../pages/geocerca-google/geocerca-google';
     //GeocercaGooglePage
   ],
   imports: [
+    FormsModule, 
+    ReactiveFormsModule,
     BrowserModule,
     IonicModule.forRoot(MyApp),
     HttpClientModule,

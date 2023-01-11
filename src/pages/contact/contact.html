@@ -7,6 +7,39 @@
 </ion-header>
 
 <ion-content>
+  <form 
+        (ngSubmit)="onCreate()" 
+        [formGroup]="registerForm">
+  <ion-card>
+	  <ion-card-header>
+	    Formulario de contacto
+	  </ion-card-header>
+	  <ion-card-content>
+	    <ion-item>
+        <ion-label>Nombre:</ion-label>
+        <ion-input [(ngModel)]="nombre" formControlName="nombre" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Email:</ion-label>
+        <ion-input [(ngModel)]="email" 
+        formControlName="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Password:</ion-label>
+        <ion-input formControlName="password" 
+        [(ngModel)]="password"></ion-input>
+      </ion-item>
+	  </ion-card-content>
+	  <ion-list inset>
+		  <button ion-button color="dark" type="submit">Crear</button>
+		</ion-list>
+	</ion-card>
+  </form>
+  
+
+</ion-content>
+<!--
+<ion-content>
   <ion-list>
     <button ion-item *ngFor="let item of milista" (click)="openNavDetailsPage(item)" icon-start>
       <ion-icon [name]="'logo-' + item.icon" [ngStyle]="{'color': item.color}" item-start></ion-icon>
@@ -14,3 +47,4 @@
     </button>
   </ion-list>
 </ion-content>
+-->

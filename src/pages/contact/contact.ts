@@ -1,15 +1,31 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { MasinfoPage } from '../masinfo/masinfo';
-
-
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Observable } from 'rxjs';
+import { Tio } from '../../app/models/tio';
 @Component({
   selector: 'page-contact',
   templateUrl: 'contact.html'
 })
 export class ContactPage {
+  login: Observable<Tio[]>;
+  tio: Tio;
+  nombre = '';
+  email = '';
+  password = '';
+  registerForm: FormGroup;
 	milista = [];
-  constructor(public navCtrl: NavController) {
+  constructor(
+    //private tioService: TioService, 
+    private fb: FormBuilder, 
+    public navCtrl: NavController) {
+    this.registerForm = this.fb.group({ 
+        id:0,
+        nombre: ['', Validators.required], 
+        email: ['', Validators.maxLength(32)],
+        password: ['', Validators.required]
+    }); 
     this.milista = [
       {
         'title': 'Angular',
@@ -72,6 +88,32 @@ export class ContactPage {
   openNavDetailsPage(item) {
     //this.navCtrl.push(NavigationDetailsPage, { item: item });
     this.navCtrl.push(MasinfoPage, { item: item });
+  }
+  
+  async onCreate() {
+    if(!this.registerForm.valid){
+      alert('debe llenar el formulario')
+      console.log('debe llenar el formulario')
+      return;
+    }
+    this.tio = new Tio(this.nombre, this.email, this.password);
+    /*
+    var response = await this.tioService.registrar(this.tio);
+    if(response.status==200){
+      const data = response.data;
+      const usuario = data[0];
+      this.store.dispatch(new TaskActions.RegistroUsuario({
+        id: usuario.id,
+        nombre: usuario.nombre,
+        email: usuario.email,
+        password: usuario.password
+      }) )
+      this.router.navigate(['/']);
+      
+    }else{
+      console.log('ocurrio un error')
+    }
+    */
   }
 
 }
